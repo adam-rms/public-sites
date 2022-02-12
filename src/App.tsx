@@ -514,7 +514,7 @@ function App() {
             <a href="https://adam-rms.com">AdamRMS</a>
           </Col>
           <Col className="footer-right" xs={12} sm={12} md={12} lg={6}>
-            {process.env.APP_VERSION}
+            {process.env.REACT_APP_VERSION}
             <strong>
               &copy;2018-{new Date().getFullYear()}{' '}
               <a href="https://bithell.studio">Bithell Studios Ltd</a>.
