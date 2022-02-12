@@ -515,7 +515,7 @@ function App() {
           </Col>
           <Col className="footer-right" xs={12} sm={12} md={12} lg={6}>
             <strong>
-              &copy;2018-2022{' '}
+              &copy;2018-{new Date().getFullYear()}{' '}
               <a href="https://bithell.studio">Bithell Studios Ltd</a>.
             </strong>{' '}
             All rights reserved.
