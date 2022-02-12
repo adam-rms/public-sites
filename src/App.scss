@@ -1,0 +1,120 @@
+@import "~bootstrap/scss/bootstrap";
+
+$footer-height: 60px;
+
+/* ---------------------------------------------------
+    SIDEBAR
+----------------------------------------------------- */
+
+.container-fluid, .col, .row {
+  padding-right: 0;
+  padding-left: 0;
+}
+.row {
+  width: 100vw;
+  margin: 0;
+}
+
+@include media-breakpoint-up(lg) {
+  html, #root, body {
+    height: 100%;
+  }
+  body {
+    margin-bottom: $footer-height; /* Margin bottom by footer height */
+  }
+  .container-fluid, .sidebar, .content  {
+    height: calc(100vh - $footer-height);
+  }
+  .content, .sidebar {
+    overflow-y: auto;
+  }
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      overflow-x: hidden;
+  }
+}
+
+.sidebar {
+  box-sizing: border-box;
+  border-right: 1px solid black;
+  padding: 20px;
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+.sidebar .nav-link .fa {
+  margin-right: 4px;
+  color: #999;
+}
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .fa,
+.sidebar .nav-link.active .fa {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+.sidebar h3 {
+  font-size: 1.5rem;
+}
+
+.sidebar img {
+  width:100%;
+  margin:0;
+}
+
+/* ---------------------------------------------------
+    FOOTER
+----------------------------------------------------- */
+
+.footer {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+@include media-breakpoint-up(lg) {
+  .footer {
+    position: absolute;
+    bottom: 0;
+    height: $footer-height;
+    line-height: 40px;
+  }
+  .footer-left {
+      padding:10px;
+  }
+  .footer-right {
+      text-align: right;
+      padding:10px;
+  }
+}
+@include media-breakpoint-down(md) { 
+  .footer-left {
+      padding:5px;
+      text-align:center;
+  }
+  .footer-right {
+      text-align:center;
+      padding:5px;
+  }
+}
+
+/* ---------------------------------------------------
+    CONTENT
+----------------------------------------------------- */
+
+.content-wrapper {
+  padding: 20px;
+}

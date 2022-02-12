@@ -1,0 +1,10 @@
+div.headerImage {
+  width: 100%;
+  min-height:200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-color: #cccccc;
+  background-image: url("kitten.jpg");
+  margin-bottom:10px;
+}
