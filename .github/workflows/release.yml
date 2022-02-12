@@ -1,0 +1,17 @@
+name: Release new Version
+on:
+  release:
+    types: [published]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+        fetch-depth: 0
+    - uses: actions/setup-node@v2
+    - name: Version
+      run: |
+        npm version from-git
+    - uses: ad-m/github-push-action@master

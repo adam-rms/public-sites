@@ -1,6 +1,6 @@
 {
   "name": "public-sites",
-  "version": "2.0.0-pre1",
+  "version": "2.0.0",
   "author": "Bithell Studios Ltd",
   "private": false,
   "licence": "AGPL-3.0-only",
@@ -25,7 +25,9 @@
     "react-bootstrap": "^2.1.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "sass": "^1.49.7",
     "typescript": "^4.5.5",
     "web-vitals": "^2.1.4"
   },
